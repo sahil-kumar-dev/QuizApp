@@ -66,7 +66,9 @@ function submit() {
 
     quizData()
     if (current >= len) {
-        quiz.innerHTML = score;
+        quiz.innerHTML = `
+        <h2 style="text-align:center">You have answerd correctly ${score} out of ${len}.</h2>
+        `;
     }
 }
 quizData()
