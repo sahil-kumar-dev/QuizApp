@@ -4,94 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Kanit&family=Merriweather&family=Signika+Negative&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Quiz App</title>
 </head>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        -webkit-text-select:none;
-        -webkit-tap-highlight-color: transparent;
-    }
-
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        background: url('https://products.ls.graphics/mesh-gradients/images/12.-Tumbleweed_1.jpg') center center/cover;
-    }
-
-    .quiz-container {
-        border-radius: 10px;
-        padding: 1rem;
-        box-shadow: 0 0 10px black;
-        backdrop-filter: blur(20px);
-        max-width: 600px;
-        width: 80%;
-        background-color: rgba(255, 255, 255, 0.4);
-    }
-
-    .quiz {}
-
-    .questionCount {
-        margin-bottom: 10px;
-
-    }
-
-    #questionLength {
-        color: rgb(0, 0, 0);
-        font-weight: bold;
-        letter-spacing: 1px;
-    }
-
-    .question {}
-
-    .answers {}
-
-    .answers li {
-        font: bold;
-        font-size: 1.2rem;
-        letter-spacing: 1px;
-        margin: 15px 0;
-        list-style-type: none;
-    }
-
-    input[type="radio"] {
-        appearance: none;
-        background-color: white;
-        position: relative;
-        margin: 0;
-        font: inherit;
-        width: 1.15em;
-        height: 1.15em;
-        border: 0.15em solid rgb(0, 0, 0);
-        border-radius: 50%;
-        display: inline-grid;
-        place-content: center;
-    }
-
-    input[type="radio"]::before {
-        content: "";
-        width: 0.65rem;
-        height: 0.65rem;
-        border-radius: 50%;
-        background-color: blue;
-        transform: scale(0);
-        transition: 120ms transform ease-in-out;
-        box-shadow: inset 1em 1em var(--form-control-color);
-    }
-
-    input[type="radio"]:checked::before {
-        transform: scale(1);
-    }
-
-    .radio-btn~label {
-        cursor: pointer;
-    }
-
-    .btn {}
-</style>
 
 <body>
     <div class="quiz-container">
@@ -119,81 +35,7 @@
             <button onclick="submit()" class="btn">Submit</button>
         </div>
     </div>
-    <script>
-        const quiz = document.querySelector('.quiz')
-        const ques = document.getElementById('question');
-        const a_text = document.getElementById('a_text');
-        const b_text = document.getElementById('b_text');
-        const c_text = document.getElementById('c_text');
-        const d_text = document.getElementById('d_text');
-        const radioBtn = document.querySelectorAll('.radio-btn');
-        const questionLength = document.getElementById('questionLength');
-        const submitBtn = document.querySelector('.btn')
-
-        let current = 0;
-        let score = 0;
-        let correctAns;
-        let len
-
-        async function quizData() {
-            const result = await fetch('quizData.json');
-            const data = await result.json();
-            addQuestion(data);
-        }
-
-        function addQuestion(data) {
-            len = data.length;
-            const { question, a, b, c, d, correct } = data[current];
-
-            questionLength.innerHTML = `${current + 1}/${len}`;
-            ques.innerHTML = question;
-            a_text.innerHTML = a;
-            b_text.innerHTML = b;
-            c_text.innerHTML = c;
-            d_text.innerHTML = d;
-            current++;
-            correctAns = correct;
-            submitBtn.setAttribute('disabled', 'disabled')
-        }
-
-        radioBtn.forEach(btn => {
-            btn.addEventListener('change', () => {
-                submitBtn.removeAttribute('disabled')
-
-            })
-        })
-
-        function getSelected() {
-            let answer
-            radioBtn.forEach(btn => {
-                if (btn.checked) {
-                    answer = btn.id
-                }
-            })
-            return answer
-        }
-
-        function resetRadionBtn() {
-            radioBtn.forEach(btn => {
-                btn.checked = false;
-            });
-        }
-
-
-        function submit() {
-            if (correctAns == getSelected()) {
-                score++
-            }
-            resetRadionBtn()
-
-            quizData()
-            if (current >= len) {
-                quiz.innerHTML = score;
-            }
-        }
-        quizData()
-
-    </script>
+<script src="script.js"></script>
 </body>
 
 </html>
