@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <div class="quiz-container">
+        <div class="quiz">
+            <p>Questions: <span id="questionLength"></span></p>
+            <h1 id="question"></h1>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="radio-btn">
+                    <label for="a" id="a_text"></label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="b" class="radio-btn">
+                    <label for="b" id="b_text"></label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="c" class="radio-btn">
+                    <label for="c" id="c_text"></label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="d" class="radio-btn">
+                    <label for="d" id="d_text"></label>
+                </li>
+            </ul>
+            <button onclick="submit()" class="btn">Submit</button>
+        </div>
+    </div>
+    <script>
+        const quiz=document.querySelector('.quiz')
+        const ques = document.getElementById('question');
+        const a_text = document.getElementById('a_text');
+        const b_text = document.getElementById('b_text');
+        const c_text = document.getElementById('c_text');
+        const d_text = document.getElementById('d_text');
+        const radioBtn = document.querySelectorAll('.radio-btn');
+        const questionLength = document.getElementById('questionLength');
+        const submitBtn=document.querySelector('.btn')
+
+        let current = 0;
+        let score =0;
+        let correctAns;
+        let len
+
+        async function quizData() {
+            const result = await fetch('quizData.json');
+            const data = await result.json();
+            addQuestion(data);
+        }
+        
+        function addQuestion(data) {
+            len = data.length;
+            const { question, a, b, c, d,correct } = data[current];
+            
+            questionLength.innerHTML = `${current + 1}/${len}`;
+            ques.innerHTML = question;
+            a_text.innerHTML = a;
+            b_text.innerHTML = b;
+            c_text.innerHTML = c;
+            d_text.innerHTML = d;
+            current++;
+            correctAns=correct;
+            submitBtn.setAttribute('disabled','disabled')
+        }
+        
+        radioBtn.forEach(btn=>{
+            btn.addEventListener('change',()=>{
+                submitBtn.removeAttribute('disabled')
+
+            })
+        })
+
+        function getSelected(){
+            let answer
+            radioBtn.forEach(btn=>{
+                if(btn.checked){
+                    answer=btn.id
+                }
+            })
+            return answer
+        }
+        
+        function resetRadionBtn() {
+            radioBtn.forEach(btn => {
+                btn.checked = false;
+            });
+        }
+        
+        
+        function submit() {
+            if(correctAns==getSelected()){
+                score++
+            }
+            resetRadionBtn()
+            
+            quizData()
+            if(current>=len){
+                quiz.innerHTML=score;
+            }
+        }
+        quizData()
+        
+
+
+
+    </script>
+</body>
+
+</html>

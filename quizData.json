@@ -1,0 +1,466 @@
+[
+    {
+        "question": "What does CSS stand for?",
+        "a": "Central Style Sheets",
+        "b": "Cascading Style Sheets",
+        "c": "Cascading Simple Sheets",
+        "d": "None of the above",
+        "correct": "b"
+    },
+    {
+        "question": "What is HTML used for?",
+        "a": "Hypertext Markup Language",
+        "b": "Hyper Transfer Markup Language",
+        "c": "High Text Markup Language",
+        "d": "Hyperlink and Text Markup Language",
+        "correct": "a"
+    },
+    {
+        "question": "Which programming language is often used for web development?",
+        "a": "Python",
+        "b": "Java",
+        "c": "JavaScript",
+        "d": "C++",
+        "correct": "c"
+    },
+    {
+        "question": "What does HTML stand for?",
+        "a": "Hyper Text Markup Language",
+        "b": "High-Level Text Markup Language",
+        "c": "Hyperlink and Text Markup Language",
+        "d": "High-Level Test Markup Language",
+        "correct": "a"
+    },
+    {
+        "question": "What is the purpose of JavaScript?",
+        "a": "To style web pages",
+        "b": "To create web pages",
+        "c": "To add interactivity to web pages",
+        "d": "To define the structure of web pages",
+        "correct": "c"
+    },
+    {
+        "question": "What is the HTML tag used for creating hyperlinks?",
+        "a": "&lt;link&gt;",
+        "b": "&lt;a&gt;",
+        "c": "&lt;href&gt;",
+        "d": "&lt;url&gt;",
+        "correct": "b"
+    },
+    {
+        "question": "Which CSS property is used to change the text color of an element?",
+        "a": "color",
+        "b": "background-color",
+        "c": "font-color",
+        "d": "text-color",
+        "correct": "a"
+    },
+    {
+        "question": "What is the correct way to comment out multiple lines in JavaScript?",
+        "a": "// This is a comment",
+        "b": "/* This is a comment */",
+        "c": "''' This is a comment '''",
+        "d": "&lt;!-- This is a comment --&gt;",
+        "correct": "b"
+    },
+    {
+        "question": "Which HTML tag is used for creating an unordered list?",
+        "a": "&lt;ul&gt;",
+        "b": "&lt;ol&gt;",
+        "c": "&lt;li&gt;",
+        "d": "&lt;list&gt;",
+        "correct": "a"
+    },
+    {
+        "question": "In CSS, what does 'CSS' stand for?",
+        "a": "Cascading Simple Sheets",
+        "b": "Central Style Sheets",
+        "c": "Cascading Style Sheets",
+        "d": "Cascading Sheet Styles",
+        "correct": "c"
+    },
+    {
+        "question": "What is the CSS property used to control the spacing between elements?",
+        "a": "margin",
+        "b": "padding",
+        "c": "border",
+        "d": "spacing",
+        "correct": "a"
+    },
+    {
+        "question": "Which HTML tag is used for creating a table?",
+        "a": "&lt;table&gt;",
+        "b": "&lt;tr&gt;",
+        "c": "&lt;td&gt;",
+        "d": "&lt;th&gt;",
+        "correct": "a"
+    },
+    {
+        "question": "What does the 'href' attribute in an anchor tag (&lt;a&gt;) specify?",
+        "a": "The text content of the link",
+        "b": "The target URL of the link",
+        "c": "The font size of the link",
+        "d": "The background color of the link",
+        "correct": "b"
+    },
+    {
+        "question": "Which JavaScript function is used to display a dialog box with a message?",
+        "a": "alert()",
+        "b": "prompt()",
+        "c": "confirm()",
+        "d": "message()",
+        "correct": "a"
+    },
+    {
+        "question": "What is the purpose of the HTML &lt;meta&gt; tag?",
+        "a": "To create a link to another webpage",
+        "b": "To define a paragraph of text",
+        "c": "To provide metadata about the document",
+        "d": "To display an image",
+        "correct": "c"
+    },
+    {
+        "question": "Which CSS property is used to change the font size of text?",
+        "a": "font-style",
+        "b": "font-weight",
+        "c": "font-size",
+        "d": "font-color",
+        "correct": "c"
+    },
+    {
+        "question": "In JavaScript, what does the 'typeof' operator do?",
+        "a": "It checks if a variable is defined",
+        "b": "It returns the data type of a value",
+        "c": "It converts a string to a number",
+        "d": "It adds two numbers together",
+        "correct": "b"
+    },
+    {
+        "question": "What is the purpose of the HTML &lt;div&gt; element?",
+        "a": "To create a hyperlink",
+        "b": "To define a division or a section in a webpage",
+        "c": "To display a video",
+        "d": "To format text as bold",
+        "correct": "b"
+    },
+    {
+        "question": "What is the CSS 'box-model' property used for?",
+        "a": "To control the visibility of an element",
+        "b": "To add shadows to text",
+        "c": "To define the layout of elements in a box",
+        "d": "To change the shape of an element",
+        "correct": "c"
+    },
+    {
+        "question": "Which HTML tag is used for creating an ordered list?",
+        "a": "&lt;ul&gt;",
+        "b": "&lt;li&gt;",
+        "c": "&lt;ol&gt;",
+        "d": "&lt;list&gt;",
+        "correct": "c"
+    },
+    {
+        "question": "What is the purpose of the JavaScript 'for' loop?",
+        "a": "To create a function",
+        "b": "To define a variable",
+        "c": "To repeat a block of code a specific number of times",
+        "d": "To add event listeners to HTML elements",
+        "correct": "c"
+    },
+    {
+        "question": "What is the CSS 'display' property used for?",
+        "a": "To change the background color of an element",
+        "b": "To control the visibility of an element",
+        "c": "To set the text alignment",
+        "d": "To define the layout of an element",
+        "correct": "d"
+    },
+    {
+        "question": "In HTML, what does the 'alt' attribute in an &lt;img&gt; tag specify?",
+        "a": "The image source",
+        "b": "The image width",
+        "c": "The image height",
+        "d": "Alternative text for the image (displayed if the image can't be loaded)",
+        "correct": "d"
+    },
+    {
+        "question": "Which JavaScript method is used to add a new element to the end of an array?",
+        "a": "push()",
+        "b": "concat()",
+        "c": "splice()",
+        "d": "slice()",
+        "correct": "a"
+    },
+    {
+        "question": "What is HTML5?",
+        "a": "A new version of the HTML language",
+        "b": "A programming language",
+        "c": "A style sheet language",
+        "d": "A video game",
+        "correct": "a"
+    },
+    {
+        "question": "Which HTML tag is used for creating a line break?",
+        "a": "&lt;lb&gt;",
+        "b": "&lt;break&gt;",
+        "c": "&lt;br&gt;",
+        "d": "&lt;newline&gt;",
+        "correct": "c"
+    },
+    {
+        "question": "What is the purpose of the CSS 'position' property?",
+        "a": "To change the font size of text",
+        "b": "To control the visibility of an element",
+        "c": "To define the layout of an element in relation to its parent",
+        "d": "To add a border to an element",
+        "correct": "c"
+    },
+    {
+        "question": "Which HTML tag is used for creating a hyperlink?",
+        "a": "&lt;link&gt;",
+        "b": "&lt;a&gt;",
+        "c": "&lt;href&gt;",
+        "d": "&lt;url&gt;",
+        "correct": "b"
+    },
+    {
+        "question": "What is the purpose of the JavaScript 'if' statement?",
+        "a": "To create a function",
+        "b": "To check a condition and execute code based on the result",
+        "c": "To define a variable",
+        "d": "To add event listeners to HTML elements",
+        "correct": "b"
+    },
+    {
+        "question": "What is the CSS 'float' property used for?",
+        "a": "To make elements float on water",
+        "b": "To control the flow of text around an element",
+        "c": "To add animations to elements",
+        "d": "To change the background color of an element",
+        "correct": "b"
+    },
+    {
+        "question": "Which HTML tag is used for creating a form?",
+        "a": "&lt;form&gt;",
+        "b": "&lt;input&gt;",
+        "c": "&lt;button&gt;",
+        "d": "&lt;submit&gt;",
+        "correct": "a"
+    },
+    {
+        "question": "What is the purpose of the HTML &lt;head&gt; element?",
+        "a": "To create a heading",
+        "b": "To define the main content of the webpage",
+        "c": "To provide metadata about the document",
+        "d": "To display images",
+        "correct": "c"
+    },
+    {
+        "question": "Which CSS property is used to add spacing between the border and content of an element?",
+        "a": "margin",
+        "b": "padding",
+        "c": "border-spacing",
+        "d": "spacing",
+        "correct": "b"
+    },
+    {
+        "question": "What is the purpose of the JavaScript 'switch' statement?",
+        "a": "To create a loop",
+        "b": "To check a condition and execute code based on the result",
+        "c": "To define a function",
+        "d": "To add event listeners to HTML elements",
+        "correct": "b"
+    },
+    {
+        "question": "Which HTML tag is used for creating an image?",
+        "a": "&lt;img&gt;",
+        "b": "&lt;image&gt;",
+        "c": "&lt;picture&gt;",
+        "d": "&lt;graphic&gt;",
+        "correct": "a"
+    },
+    {
+        "question": "What does the 'src' attribute in an &lt;img&gt; tag specify?",
+        "a": "The image source",
+        "b": "The image width",
+        "c": "The image height",
+        "d": "The image caption",
+        "correct": "a"
+    },
+    {
+        "question": "Which JavaScript function is used to change the content of an HTML element?",
+        "a": "innerHTML",
+        "b": "changeContent",
+        "c": "textContent",
+        "d": "replaceText",
+        "correct": "a"
+    },
+    {
+        "question": "What is the purpose of the HTML &lt;input&gt; element?",
+        "a": "To create a button",
+        "b": "To create a link",
+        "c": "To display an image",
+        "d": "To accept user input",
+        "correct": "d"
+    },
+    {
+        "question": "What is a JavaScript variable?",
+        "a": "A container for storing data",
+        "b": "A type of function",
+        "c": "A type of loop",
+        "d": "A type of event",
+        "correct": "a"
+    },
+    {
+        "question": "What is the purpose of the CSS 'background-image' property?",
+        "a": "To change the font size of text",
+        "b": "To control the visibility of an element",
+        "c": "To set a background image for an element",
+        "d": "To add a border to an element",
+        "correct": "c"
+    },
+    {
+        "question": "Which HTML tag is used for creating a heading?",
+        "a": "&lt;header&gt;",
+        "b": "&lt;heading&gt;",
+        "c": "&lt;h1&gt;",
+        "d": "&lt;h2&gt;",
+        "correct": "c"
+    },
+    {
+        "question": "What is the purpose of the JavaScript 'while' loop?",
+        "a": "To create a function",
+        "b": "To define a variable",
+        "c": "To repeat a block of code while a condition is true",
+        "d": "To add event listeners to HTML elements",
+        "correct": "c"
+    },
+    {
+        "question": "What is the CSS 'z-index' property used for?",
+        "a": "To make elements float on water",
+        "b": "To control the flow of text around an element",
+        "c": "To add animations to elements",
+        "d": "To control the stacking order of elements",
+        "correct": "d"
+    },
+    {
+        "question": "Which HTML tag is used for creating a button?",
+        "a": "&lt;button&gt;",
+        "b": "&lt;input&gt;",
+        "c": "&lt;form&gt;",
+        "d": "&lt;submit&gt;",
+        "correct": "a"
+    },
+    {
+        "question": "What is the purpose of the HTML &lt;p&gt; element?",
+        "a": "To create a link",
+        "b": "To define a paragraph of text",
+        "c": "To provide metadata about the document",
+        "d": "To display images",
+        "correct": "b"
+    },
+    {
+        "question": "Which CSS property is used to add spacing between the border and content of an element?",
+        "a": "margin",
+        "b": "padding",
+        "c": "border-spacing",
+        "d": "spacing",
+        "correct": "b"
+    },
+    {
+        "question": "What is the purpose of the JavaScript 'switch' statement?",
+        "a": "To create a loop",
+        "b": "To check a condition and execute code based on the result",
+        "c": "To define a function",
+        "d": "To add event listeners to HTML elements",
+        "correct": "b"
+    },
+    {
+        "question": "Which HTML tag is used for creating an image?",
+        "a": "&lt;img&gt;",
+        "b": "&lt;image&gt;",
+        "c": "&lt;picture&gt;",
+        "d": "&lt;graphic&gt;",
+        "correct": "a"
+    },
+    {
+        "question": "What does the 'src' attribute in an &lt;img&gt; tag specify?",
+        "a": "The image source",
+        "b": "The image width",
+        "c": "The image height",
+        "d": "The image caption",
+        "correct": "a"
+    },
+    {
+        "question": "Which JavaScript function is used to change the content of an HTML element?",
+        "a": "innerHTML",
+        "b": "changeContent",
+        "c": "textContent",
+        "d": "replaceText",
+        "correct": "a"
+    },
+    {
+        "question": "What is the purpose of the HTML &lt;input&gt; element?",
+        "a": "To create a button",
+        "b": "To create a link",
+        "c": "To display an image",
+        "d": "To accept user input",
+        "correct": "d"
+    },
+    {
+        "question": "What is a JavaScript variable?",
+        "a": "A container for storing data",
+        "b": "A type of function",
+        "c": "A type of loop",
+        "d": "A type of event",
+        "correct": "a"
+    },
+    {
+        "question": "What is the purpose of the CSS 'background-image' property?",
+        "a": "To change the font size of text",
+        "b": "To control the visibility of an element",
+        "c": "To set a background image for an element",
+        "d": "To add a border to an element",
+        "correct": "c"
+    },
+    {
+        "question": "Which HTML tag is used for creating a heading?",
+        "a": "&lt;header&gt;",
+        "b": "&lt;heading&gt;",
+        "c": "&lt;h1&gt;",
+        "d": "&lt;h2&gt;",
+        "correct": "c"
+    },
+    {
+        "question": "What is the purpose of the JavaScript 'while' loop?",
+        "a": "To create a function",
+        "b": "To define a variable",
+        "c": "To repeat a block of code while a condition is true",
+        "d": "To add event listeners to HTML elements",
+        "correct": "c"
+    },
+    {
+        "question": "What is the CSS 'z-index' property used for?",
+        "a": "To make elements float on water",
+        "b": "To control the flow of text around an element",
+        "c": "To add animations to elements",
+        "d": "To control the stacking order of elements",
+        "correct": "d"
+    },
+    {
+        "question": "Which HTML tag is used for creating a button?",
+        "a": "&lt;button&gt;",
+        "b": "&lt;input&gt;",
+        "c": "&lt;form&gt;",
+        "d": "&lt;submit&gt;",
+        "correct": "a"
+    },
+    {
+        "question": "What is the purpose of the HTML &lt;p&gt; element?",
+        "a": "To create a link",
+        "b": "To define a paragraph of text",
+        "c": "To provide metadata about the document",
+        "d": "To display images",
+        "correct": "b"
+    }
+]
