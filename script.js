@@ -57,6 +57,10 @@ function resetRadionBtn() {
     });
 }
 
+function reset(){
+    current=0;
+}
+
 
 function submit() {
     if (correctAns == getSelected()) {
@@ -68,7 +72,7 @@ function submit() {
     if (current >= len) {
         quiz.innerHTML = `
         <h2 style="text-align:center">You have answerd correctly ${score} out of ${len}.</h2>
-        <button onclick="reset()" class="btn">Reset</button>
+        <button onclick="reset()" class="btn" style="display:block";>Reset</button>
         `;
     }
 }
