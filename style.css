@@ -11,13 +11,26 @@ body {
     justify-content: center;
     height: 100vh;
     background: url('https://products.ls.graphics/mesh-gradients/images/12.-Tumbleweed_1.jpg') center center/cover;
+    /* background: url('https://cdn.pixabay.com/photo/2020/05/07/04/01/digitization-5140071_1280.jpg') center center/cover; */
+    /* background: url('https://cdn.pixabay.com/photo/2016/07/23/10/48/binary-1536646_1280.jpg') center center/cover; */
+    /* background: url('https://cdn.pixabay.com/photo/2016/12/01/13/10/lightbulb-1875247_1280.jpg') center center/cover; */
+}
+
+.heading{
+    position: absolute;
+    top: 0;
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-family: 'Merriweather';
 }
 
 .quiz-container {
     border-radius: 10px;
     padding: 1rem;
     box-shadow: 0 0 10px black;
+    backdrop-filter: blur(8px);
     backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
     max-width: 600px;
     width: 80%;
     background-color: rgba(255, 255, 255, 0.4);
@@ -40,6 +53,7 @@ body {
 
 #question {
     font-family: 'Merriweather';
+    color: black;
 }
 
 .answers li {
@@ -50,16 +64,19 @@ body {
     list-style-type: none;
     display: flex;
     align-items: center;
+    color: #413333;
 }
 
 input[type="radio"] {
     appearance: none;
+    background-color: transparent;
     background-color: white;
+    background-color: transparent;
     position: relative;
     margin: 0;
     font: inherit;
-    width: 1.15em;
-    height: 1.15em;
+    width: 20px;
+    height: 20px;
     border: 0.15em solid rgb(0, 0, 0);
     border-radius: 50%;
     display: grid;
@@ -94,23 +111,29 @@ input[type="radio"]:checked::before {
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 1.2rem;
-    background-color: skyblue;
+    background-color: rgb(87, 199, 243);
     border-radius: 20px;
     cursor: pointer;
     border: none;
     outline: 2px solid rgb(0, 0, 0);
     outline-offset: 3px;
     transition: 0.1s linear;
+    text-transform: uppercase;
+    font-family: 'Merriweather';
 }
 .btn:active{
     outline-offset: 0;
 }
 .btn:disabled{
-    background-color: rgb(197, 222, 231);
+    background-color: rgb(84, 160, 170);
+    cursor: not-allowed;
 }
 
 @media screen and (max-width:468px) {
     h2{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+    }
+    .answers li{
+        font-size: 1rem;
     }
 }
