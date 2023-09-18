@@ -68,6 +68,7 @@ function submit() {
     if (current >= len) {
         quiz.innerHTML = `
         <h2 style="text-align:center">You have answerd correctly ${score} out of ${len}.</h2>
+        <button onclick="reset()" class="btn">Reset</button>
         `;
     }
 }
